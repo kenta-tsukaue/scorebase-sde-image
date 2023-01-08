@@ -22,8 +22,6 @@ import os
 import time
 
 import numpy as np
-import tensorflow as tf
-import tensorflow_gan as tfgan
 import logging
 # Keep the import below for registering all model definitions
 from models import ddpm, ncsnv2, ncsnpp
@@ -38,6 +36,8 @@ import sde_lib
 from absl import flags
 import torch
 from torch.utils import tensorboard
+import tensorflow as tf
+import tensorflow_gan as tfgan
 from torchvision.utils import make_grid, save_image
 from utils import save_checkpoint, restore_checkpoint
 
